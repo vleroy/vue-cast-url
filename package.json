@@ -1,0 +1,25 @@
+{
+  "name": "vue-cast-url",
+  "version": "1.0.0",
+  "description": "Vue Plugin to cast URL easily",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vleroy/vue-cast-url.git"
+  },
+  "keywords": [
+    "Vue",
+    "Cast",
+    "Chromecast",
+    "URL"
+  ],
+  "author": "Valentin LEROY",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vleroy/vue-cast-url/issues"
+  },
+  "homepage": "https://github.com/vleroy/vue-cast-url#readme"
+}
