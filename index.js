@@ -2,7 +2,6 @@ export default {
 
   install (Vue, opts) {
     const CAST_API_URL = '//www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1'
-    const CLASS_NAME = 'google-cast-btn'
     const States = {
       CREATED: 'created',
       LOADING: 'loading',
@@ -11,7 +10,8 @@ export default {
     Object.freeze(States)
     const DEFAULT_OPTIONS = {
       receiverApplicationId: '5CB45E5A',
-      lazyLoading: false
+      lazyLoading: false,
+      className: 'google-cast-btn'
     }
     opts = opts || {}
     Object.assign(opts, DEFAULT_OPTIONS)
@@ -63,9 +63,9 @@ export default {
         })
 			},
       _addButton () {
-        let btnContainer = document.getElementsByClassName(CLASS_NAME)
+        let btnContainer = document.getElementsByClassName(opts.className)
         if (btnContainer.length === 0) {
-          return console.warn(`Cannot find element with '${CLASS_NAME}' class`)
+          return console.warn(`Cannot find element with '${opts.className}' class`)
         }
         btnContainer = btnContainer[0]
         const castBtn = document.createElement('google-cast-launcher')
