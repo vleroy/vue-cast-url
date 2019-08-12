@@ -1,6 +1,6 @@
 {
   "name": "vue-cast-url",
-  "version": "1.0.0",
+  "version": "0.0.3",
   "description": "Vue Plugin to cast URL easily",
   "main": "index.js",
   "scripts": {

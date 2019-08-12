@@ -2,6 +2,8 @@
 Vue plugin to show your website on a chromecast with a single function.
 This project is using the [URL Cast Receiver from DeMille](https://github.com/DeMille/url-cast-receiver)
 
+For more information check the [API reference](docs/README.md)
+
 ## Setup
 ```
 npm install --save vue-cast-url
